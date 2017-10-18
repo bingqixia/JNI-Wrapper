@@ -79,7 +79,7 @@ end;
 destructor TBufferedInputStream.Destroy;
 begin
   FEnv^^.DeleteLocalRef(FEnv, FClsDef);
-  FEnv^^.DeleteLocalRef(FEnv, FOrigin);
+  //FEnv^^.DeleteLocalRef(FEnv, FOrigin);
   inherited Destroy;
 end;
 
@@ -112,7 +112,7 @@ end;
 destructor TZipEntry.Destroy;
 begin
   FEnv^^.DeleteLocalRef(FEnv, FClsDef);
-  FEnv^^.DeleteLocalRef(FEnv, FOrigin);
+  //FEnv^^.DeleteLocalRef(FEnv, FOrigin);
   inherited Destroy;
 end;
 
@@ -144,7 +144,7 @@ end;
 destructor TEnumeration.Destroy;
 begin
   FEnv^^.DeleteLocalRef(FEnv, FClsDef);
-  FEnv^^.DeleteLocalRef(FEnv, FOrigin);
+  //FEnv^^.DeleteLocalRef(FEnv, FOrigin);
   inherited Destroy;
 end;
 
@@ -176,7 +176,7 @@ end;
 destructor TZipFile.Destroy;
 begin
   FEnv^^.DeleteLocalRef(FEnv, FClsDef);
-  FEnv^^.DeleteLocalRef(FEnv, FOrigin);
+  //FEnv^^.DeleteLocalRef(FEnv, FOrigin);
   inherited Destroy;
 end;
 

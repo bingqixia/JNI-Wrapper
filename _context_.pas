@@ -109,7 +109,7 @@ end;
 destructor TPackageInfo.Destroy;
 begin
   FEnv^^.DeleteLocalRef(FEnv, FClsDef);
-  FEnv^^.DeleteLocalRef(FEnv, FOrigin);
+ // FEnv^^.DeleteLocalRef(FEnv, FOrigin);
   inherited Destroy;
 end;
 
@@ -125,7 +125,7 @@ end;
 destructor TBundle.Destroy;
 begin
   FEnv^^.DeleteLocalRef(FEnv, FClsDef);
-  FEnv^^.DeleteLocalRef(FEnv, FOrigin);
+  //FEnv^^.DeleteLocalRef(FEnv, FOrigin);
   inherited Destroy;
 end;
 
@@ -157,7 +157,7 @@ end;
 destructor TPackageManager.Destroy;
 begin
   FEnv^^.DeleteLocalRef(FEnv, FClsDef);
-  FEnv^^.DeleteLocalRef(FEnv, FOrigin);
+  //FEnv^^.DeleteLocalRef(FEnv, FOrigin);
   inherited Destroy;
 end;
 
@@ -215,7 +215,7 @@ end;
 destructor TApplicationInfo.Destroy;
 begin
   FEnv^^.DeleteLocalRef(FEnv, FClsDef);
-  FEnv^^.DeleteLocalRef(FEnv, FOrigin);
+  //FEnv^^.DeleteLocalRef(FEnv, FOrigin);
   inherited Destroy;
 end;
 
@@ -239,7 +239,7 @@ end;
 destructor TContext.Destroy;
 begin
   FEnv^^.DeleteLocalRef(FEnv, FClsDef);
-  FEnv^^.DeleteLocalRef(FEnv, FOrigin);
+ // FEnv^^.DeleteLocalRef(FEnv, FOrigin);
   inherited Destroy;
 end;
 

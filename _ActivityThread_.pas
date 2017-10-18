@@ -160,7 +160,7 @@ end;
 destructor TContentProvider.Destroy;
 begin
   FEnv^^.DeleteLocalRef(FEnv, FClsDef);
-  FEnv^^.DeleteLocalRef(FEnv, FOrigin);
+  //FEnv^^.DeleteLocalRef(FEnv, FOrigin);
   inherited Destroy;
 end;
 
@@ -193,7 +193,7 @@ end;
 destructor TProviderClientRecord.Destroy;
 begin
   FEnv^^.DeleteLocalRef(FEnv, FClsDef);
-  FEnv^^.DeleteLocalRef(FEnv, FOrigin);
+ // FEnv^^.DeleteLocalRef(FEnv, FOrigin);
   inherited Destroy;
 end;
 
@@ -209,7 +209,7 @@ end;
 destructor TIterator.Destroy;
 begin
   FEnv^^.DeleteLocalRef(FEnv, FClsDef);
-  FEnv^^.DeleteLocalRef(FEnv, FOrigin);
+ // FEnv^^.DeleteLocalRef(FEnv, FOrigin);
   inherited Destroy;
 end;
 
@@ -241,7 +241,7 @@ end;
 destructor TCollection.Destroy;
 begin
   FEnv^^.DeleteLocalRef(FEnv, FClsDef);
-  FEnv^^.DeleteLocalRef(FEnv, FOrigin);
+//  FEnv^^.DeleteLocalRef(FEnv, FOrigin);
   inherited Destroy;
 end;
 
@@ -265,7 +265,7 @@ end;
 destructor TArrayList.Destroy;
 begin
   FEnv^^.DeleteLocalRef(FEnv, FClsDef);
-  FEnv^^.DeleteLocalRef(FEnv, FOrigin);
+  //FEnv^^.DeleteLocalRef(FEnv, FOrigin);
   inherited Destroy;
 end;
 
@@ -305,7 +305,7 @@ end;
 destructor TAppBindData.Destroy;
 begin
   FEnv^^.DeleteLocalRef(FEnv, FClsDef);
-  FEnv^^.DeleteLocalRef(FEnv, FOrigin);
+  //FEnv^^.DeleteLocalRef(FEnv, FOrigin);
   inherited Destroy;
 end;
 
@@ -321,7 +321,7 @@ end;
 destructor TWeakReference.Destroy;
 begin
   FEnv^^.DeleteLocalRef(FEnv, FClsDef);
-  FEnv^^.DeleteLocalRef(FEnv, FOrigin);
+ // FEnv^^.DeleteLocalRef(FEnv, FOrigin);
   inherited Destroy;
 end;
 
@@ -345,7 +345,7 @@ end;
 destructor TArrayMap.Destroy;
 begin
   FEnv^^.DeleteLocalRef(FEnv, FClsDef);
-  FEnv^^.DeleteLocalRef(FEnv, FOrigin);
+  //FEnv^^.DeleteLocalRef(FEnv, FOrigin);
   inherited Destroy;
 end;
 
@@ -425,7 +425,7 @@ end;
 destructor TActivityThread.Destroy;
 begin
   FEnv^^.DeleteLocalRef(FEnv, FClsDef);
-  FEnv^^.DeleteLocalRef(FEnv, FOrigin);
+  //FEnv^^.DeleteLocalRef(FEnv, FOrigin);
   inherited Destroy;
 end;
 

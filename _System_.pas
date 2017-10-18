@@ -36,7 +36,7 @@ end;
 destructor TSystem.Destroy;
 begin
   FEnv^^.DeleteLocalRef(FEnv, FClsDef);
-  FEnv^^.DeleteLocalRef(FEnv, FOrigin);
+  //FEnv^^.DeleteLocalRef(FEnv, FOrigin);
   inherited Destroy;
 end;
 

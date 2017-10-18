@@ -48,7 +48,7 @@ end;
 destructor TInstrumentation.Destroy;
 begin
   FEnv^^.DeleteLocalRef(FEnv, FClsDef);
-  FEnv^^.DeleteLocalRef(FEnv, FOrigin);
+  //FEnv^^.DeleteLocalRef(FEnv, FOrigin);
   inherited Destroy;
 end;
 
@@ -70,7 +70,7 @@ end;
 destructor TApplication.Destroy;
 begin
   FEnv^^.DeleteLocalRef(FEnv, FClsDef);
-  FEnv^^.DeleteLocalRef(FEnv, FOrigin);
+  //FEnv^^.DeleteLocalRef(FEnv, FOrigin);
   inherited Destroy;
 end;
 
